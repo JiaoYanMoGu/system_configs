@@ -1,0 +1,20 @@
+{
+	"suggest.triggerAfterInsertEnter": true,
+	"suggest.noselect": false,
+	"suggest.timeout": 500,
+	"suggest.snippetIndicator": "⭐",
+	"diagnostic.virtualText": true,
+	"languageserver": {
+		"golang": {
+			"command": "go-langserver",
+			"filetypes": [
+				"go"
+			],
+			"initializationOptions": {
+				"gocodeCompletionEnabled": true,
+				"diagnosticsEnabled": true,
+				"lintTool": "golint"
+			}
+		}
+	}
+}

@@ -33,6 +33,9 @@
 ### 4. 好用的工具搜集
 + `typora`:Markdown编辑器
 + `ack-grep`:代码搜索
-
++ `tig`:zsh插件,用于查看git log
++ `git`:zsh插件,提供了一堆alias
++ `git-extras`:git 额外命令 git summary等
++ `ydict`:终端内部使用的有道词典
 
 

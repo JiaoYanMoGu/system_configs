@@ -18,7 +18,21 @@
 [vim](./vim/vim.md)
 一些开发工具的安装脚本或者配置脚本以及使用说明文档
 
-### 3. 好用的工具搜集
+### 3.  zsh
+
+[zsh](./zsh/README.md)
+
+### 4. tmux
+
+[tmux](./tmux/README.md)
+
+
+### 3. 系统配置
+[system](./system/system_config.md)
+
+### 4. 好用的工具搜集
 + `typora`:Markdown编辑器
 + `ack-grep`:代码搜索
+
+
 

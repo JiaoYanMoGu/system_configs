@@ -73,11 +73,6 @@ nnoremap <leader>m :Neomake<CR>
 let g:neomake_open_list = 2
 let g:neomake_list_height = 7
 
-"For ydict Plugin
-vnoremap <leader>yv <Esc>:Ydv<CR>
-nnoremap <leader>yc <Esc>:Ydc<CR>
-nnoremap <leader>ye :<C-u>Yde<CR>
-
 "Disable highlight
 nnoremap <leader>n :nohl<CR>
 

@@ -34,10 +34,24 @@ Plug 'Shougo/neosnippet-snippets'
 
 "Plugins for complete
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'Valloric/YouCompleteMe'
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
 "Plugins for markdown 
 Plug 'joker1007/vim-markdown-quote-syntax'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
+"Plugins from use vim as ide 
+"STL高亮
+Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()

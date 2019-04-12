@@ -37,5 +37,6 @@
 + `git`:zsh插件,提供了一堆alias
 + `git-extras`:git 额外命令 git summary等
 + `ydict`:终端内部使用的有道词典
++ `math-pix`:图片生成LaTex公式
 
 

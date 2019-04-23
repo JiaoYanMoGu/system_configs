@@ -18,4 +18,11 @@ let g:ycm_cache_omnifunc=0
 " 语法关键字补全			
 let g:ycm_seed_identifiers_with_syntax=1
 
+
+let g:ycm_python_interpreter_path = '/usr/bin/python3'
+let g:ycm_python_sys_path = ['/usr/lib/python3/dist-packages/']
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'

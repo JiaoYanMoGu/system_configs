@@ -3,3 +3,4 @@
 + `End`: 行尾
 + `Ctrl+Home`:文档首行
 + `Ctrl+End`:文档行尾
++ `Shift+PrtSc`:快速部分截图

@@ -38,5 +38,5 @@
 + `git-extras`:git 额外命令 git summary等
 + `ydict`:终端内部使用的有道词典
 + `math-pix`:图片生成LaTex公式
-+ `gitkraken`: git客户端[gitkraken](https://www.gitkraken.com/)
++ `pdftk`: pdf文件处理工具:切割合并等
 

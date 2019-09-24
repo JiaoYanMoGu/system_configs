@@ -39,4 +39,5 @@
 + `ydict`:终端内部使用的有道词典
 + `math-pix`:图片生成LaTex公式
 + `pdftk`: pdf文件处理工具:切割合并等
++ `navi`: 命令行备忘录功能，用于常用命令速查[url](https://github.com/denisidoro/navi)
 

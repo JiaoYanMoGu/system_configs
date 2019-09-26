@@ -33,3 +33,14 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 #### 五、Ctrl + Alt + A截图
 系统，键盘设置，快捷键中添加命令`gnome-screenshot -a`为自定义快捷键即可. 
+
+
+
+#### Clion + ROS
+
+```bash
+cd ~/.local/share/applications
+vim  jetbrains-clion.desktop
+添加"bash -i -c "
+```
+

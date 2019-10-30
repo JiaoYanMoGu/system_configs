@@ -35,7 +35,6 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 系统，键盘设置，快捷键中添加命令`gnome-screenshot -a`为自定义快捷键即可. 
 
 
-
 #### Clion + ROS
 
 ```bash
@@ -44,3 +43,15 @@ vim  jetbrains-clion.desktop
 添加"bash -i -c "
 ```
 
+#### Mount server
+```bash
+sudo mkdir /mnt/data
+sudo mount -t cifs -o username=a409,password=a409 -l //192.168.1.4/data /mnt/data 
+```
+
+#### Fast Github
+```bash
+nslookup github.com
+nslookup github.global.ssl.fastly.net
+# add to /etc/hosts and /etc/init.d/networking restart
+```

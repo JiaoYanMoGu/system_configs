@@ -55,3 +55,40 @@ nslookup github.com
 nslookup github.global.ssl.fastly.net
 # add to /etc/hosts and /etc/init.d/networking restart
 ```
+
+#### Ubuntu 18.04 Docker 
+查看系统发行版本
+```bash
+lsb_release -a
+```
+安装依赖
+```bash
+sudo apt install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+```
+
+添加存储库(nightly)
+如需要:`stable`更改对应配置即可
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic nightly" > /etc/apt/sources.list.d/docker-nightly.list
+```
+更新仓库并安装
+```bash
+sudo apt update
+sudo apt search docker-ce
+sudo apt install docker-ce
+```
+启动并使其每次随系统启动
+```bash
+systemctl start docker
+systemctl enable docker 
+```
+用户添加到Docker组
+```bash
+usrmod -aG docker xl # 你的用户名
+```
+配置国内代理以及设置docker存储位置，参考之前脚本

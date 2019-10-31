@@ -92,3 +92,10 @@ systemctl enable docker
 usrmod -aG docker xl # 你的用户名
 ```
 配置国内代理以及设置docker存储位置，参考之前脚本
+
+#### pdftk安装
+```bash
+sudo add-apt-repository ppa:malteworld/ppa
+sudo apt update
+sudo apt install pdftk
+```

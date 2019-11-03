@@ -92,7 +92,21 @@ systemctl enable docker
 usrmod -aG docker xl # 你的用户名
 ```
 配置国内代理以及设置docker存储位置，参考之前脚本
-
+** 新版本应该使用如下配置**:
+/etc/docker/daemon.json（Linux）或者  %programdata%\docker\config\daemon.json（Windows）
+在配置文件中添加如下配置:
+> ps: 中科大镜像加速网站
+```json
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"]
+}
+```
+之后:
+```bash
+sudo systemctl daemon-reload 
+sudo service docker restart
+```
+OJBK
 #### pdftk安装
 ```bash
 sudo add-apt-repository ppa:malteworld/ppa

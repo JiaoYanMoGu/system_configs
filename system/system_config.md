@@ -113,3 +113,27 @@ sudo add-apt-repository ppa:malteworld/ppa
 sudo apt update
 sudo apt install pdftk
 ```
+
+#### proxychains配置
+proxychains可以在终端内部方便地使用代理
+```shell
+sudo apt-get install proxychains
+```
+修改配置文件`vim /etc/proxychains.conf`，最后一行
+[ProxyList]中添加你的配置，可以参照上面的例子，注意语法
+
+临时代理:
+```shell
+# 设置
+export http_proxy=127.0.0.1:8123
+export https_proxy=127.0.0.1:8123
+# 取消
+unset http_proxy
+unset https_proxy
+```
+可能会有的问题，显示加载libproxychains.so.3错误
+直接修改`/usr/bin/proxychains`这个文件，把其中的相对路径改为绝对路径
+```shell
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libproxychains.so.3
+```
+

@@ -41,4 +41,4 @@
 + `pdftk`: pdf文件处理工具:切割合并等
 + `navi`: 命令行备忘录功能，用于常用命令速查[url](https://github.com/denisidoro/navi)
 + `cde`: http://www.pgbovine.net/cde.html `linux软件打包工具`
-
++ `proxychains`: apt-get即可安装，方便终端内部使用代理

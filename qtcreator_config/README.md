@@ -19,7 +19,23 @@ http://doc.qt.io/qtcreator/creator-tips.html#adding-a-license-header-template-fo
 * @date          %{CurrentDate:yyyy-MM-dd} 
 */
 ```
+
+```c++
+//////////////////////////////////////////////////////
+// 
+//////////////////////////////////////////////////////
+```
+
+```c++
+//////////////////////////////////////////////////////
+```
+
+
+
+
 https://stackoverflow.com/questions/35970727/use-of-variables-like-builddir-in-qtcreator-kit-settings-in-qt5/35982389#35982389
 http://doc.qt.io/qtcreator/creator-completing-code.html#editing-code-snippets
 http://doc.qt.io/qtcreator/creator-build-settings.html#using-qt-creator-variables
 https://stackoverflow.com/questions/34762739/qt-creator-placeholders
+
+
